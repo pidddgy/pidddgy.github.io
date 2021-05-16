@@ -14,8 +14,10 @@ tags:
   name: jekyll
 ---
 
-<div class="card-columns" style="column-count: 1;">
+<div class="row">
   {% for project in site.data.projects %}
-    {% include post/project_card.html %}
+    <div class="col-xs-12 col-md-6">
+      {% include post/project_card.html %}
+    </div>
   {% endfor %}
 </div>
